@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05035F2E28C8071000CAF244 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05035F2D28C8071000CAF244 /* Home.storyboard */; };
+		05035F3028C8073000CAF244 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05035F2F28C8073000CAF244 /* Initial.storyboard */; };
+		05035F3328C8086300CAF244 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05035F3228C8086300CAF244 /* Images.xcassets */; };
+		05035F3528C8087100CAF244 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05035F3428C8087100CAF244 /* Colors.xcassets */; };
 		05249D7F28C2A30A002E3C08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05249D7E28C2A30A002E3C08 /* AppDelegate.swift */; };
 		05249D8128C2A30A002E3C08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05249D8028C2A30A002E3C08 /* SceneDelegate.swift */; };
 		05249D8328C2A30A002E3C08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05249D8228C2A30A002E3C08 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05035F2D28C8071000CAF244 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		05035F2F28C8073000CAF244 /* Initial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
+		05035F3228C8086300CAF244 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		05035F3428C8087100CAF244 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		05249D7B28C2A30A002E3C08 /* bankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05249D7E28C2A30A002E3C08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05249D8028C2A30A002E3C08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05035F2C28C806BF00CAF244 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05035F2D28C8071000CAF244 /* Home.storyboard */,
+				05035F2F28C8073000CAF244 /* Initial.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05035F3128C8083700CAF244 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				05035F3228C8086300CAF244 /* Images.xcassets */,
+				05035F3428C8087100CAF244 /* Colors.xcassets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		05249D7228C2A30A002E3C08 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +82,15 @@
 		05249D7D28C2A30A002E3C08 /* bankingApp */ = {
 			isa = PBXGroup;
 			children = (
+				05035F3128C8083700CAF244 /* assets */,
+				05035F2C28C806BF00CAF244 /* View */,
 				05249D7E28C2A30A002E3C08 /* AppDelegate.swift */,
 				05249D8028C2A30A002E3C08 /* SceneDelegate.swift */,
 				05249D8228C2A30A002E3C08 /* ViewController.swift */,
-				05249D8428C2A30A002E3C08 /* Main.storyboard */,
 				05249D8728C2A30C002E3C08 /* Assets.xcassets */,
 				05249D8928C2A30C002E3C08 /* LaunchScreen.storyboard */,
 				05249D8C28C2A30C002E3C08 /* Info.plist */,
+				05249D8428C2A30A002E3C08 /* Main.storyboard */,
 			);
 			path = bankingApp;
 			sourceTree = "<group>";
@@ -127,7 +155,11 @@
 			files = (
 				05249D8B28C2A30C002E3C08 /* LaunchScreen.storyboard in Resources */,
 				05249D8828C2A30C002E3C08 /* Assets.xcassets in Resources */,
+				05035F3028C8073000CAF244 /* Initial.storyboard in Resources */,
+				05035F3328C8086300CAF244 /* Images.xcassets in Resources */,
 				05249D8628C2A30A002E3C08 /* Main.storyboard in Resources */,
+				05035F2E28C8071000CAF244 /* Home.storyboard in Resources */,
+				05035F3528C8087100CAF244 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
