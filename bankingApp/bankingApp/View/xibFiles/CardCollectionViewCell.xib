@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCustomCell" id="gTV-IL-0wX" customClass="CardCollectionViewCell" customModule="bankingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6DI-f7-55J">
+                        <rect key="frame" x="0.0" y="0.0" width="329" height="190"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BankingApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A01-OT-6ja">
+                                <rect key="frame" x="14" y="14" width="92" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="N5W-3Z-0eu"/>
+                                    <constraint firstAttribute="height" constant="20" id="aiA-At-Jxn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" name="second_background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cD2-os-zIz">
+                                <rect key="frame" x="193" y="14" width="125" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="bYy-vK-fWR"/>
+                                    <constraint firstAttribute="width" constant="125" id="qiF-mS-ht6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                                <color key="textColor" name="second_background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa4-eE-Yzg">
+                                <rect key="frame" x="14" y="63" width="90" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="second_background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numero de tajeta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qO3-EY-Uwe">
+                                <rect key="frame" x="14" y="120" width="124" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" name="second_background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3H6-Em-nEz">
+                                <rect key="frame" x="14" y="148" width="35" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="second_background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visa_image" translatesAutoresizingMaskIntoConstraints="NO" id="0XX-3e-Mgx">
+                                <rect key="frame" x="260" y="143" width="57" height="25"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="0XX-3e-Mgx" firstAttribute="centerY" secondItem="3H6-Em-nEz" secondAttribute="centerY" id="3SW-4R-efa"/>
+                            <constraint firstItem="3H6-Em-nEz" firstAttribute="leading" secondItem="qO3-EY-Uwe" secondAttribute="leading" id="5pc-9l-Tgp"/>
+                            <constraint firstAttribute="trailing" secondItem="0XX-3e-Mgx" secondAttribute="trailing" constant="12" id="7Fm-2p-sal"/>
+                            <constraint firstItem="Sa4-eE-Yzg" firstAttribute="top" secondItem="A01-OT-6ja" secondAttribute="bottom" constant="29" id="8p3-gI-8l3"/>
+                            <constraint firstItem="3H6-Em-nEz" firstAttribute="top" secondItem="qO3-EY-Uwe" secondAttribute="bottom" constant="8" id="FMh-pS-j1r"/>
+                            <constraint firstItem="qO3-EY-Uwe" firstAttribute="top" secondItem="Sa4-eE-Yzg" secondAttribute="bottom" constant="28" id="KjT-za-ITj"/>
+                            <constraint firstItem="cD2-os-zIz" firstAttribute="leading" secondItem="A01-OT-6ja" secondAttribute="trailing" constant="87" id="Lc8-pC-Bc4"/>
+                            <constraint firstItem="A01-OT-6ja" firstAttribute="leading" secondItem="6DI-f7-55J" secondAttribute="leading" constant="14" id="M39-eD-rTz"/>
+                            <constraint firstItem="A01-OT-6ja" firstAttribute="top" secondItem="6DI-f7-55J" secondAttribute="top" constant="14" id="PgE-Bc-VwL"/>
+                            <constraint firstAttribute="trailing" secondItem="cD2-os-zIz" secondAttribute="trailing" constant="11" id="RWR-ZF-m3R"/>
+                            <constraint firstAttribute="bottom" secondItem="3H6-Em-nEz" secondAttribute="bottom" constant="27" id="Wol-qy-04B"/>
+                            <constraint firstItem="Sa4-eE-Yzg" firstAttribute="leading" secondItem="A01-OT-6ja" secondAttribute="leading" id="cVK-QV-epG"/>
+                            <constraint firstAttribute="trailing" secondItem="Sa4-eE-Yzg" secondAttribute="trailing" constant="225" id="iUj-OP-Taa"/>
+                            <constraint firstItem="cD2-os-zIz" firstAttribute="centerY" secondItem="A01-OT-6ja" secondAttribute="centerY" id="rPF-6n-uDi"/>
+                            <constraint firstItem="qO3-EY-Uwe" firstAttribute="leading" secondItem="Sa4-eE-Yzg" secondAttribute="leading" id="rgU-d5-iBk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="6DI-f7-55J" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cah-7n-Qy5"/>
+                <constraint firstAttribute="trailing" secondItem="6DI-f7-55J" secondAttribute="trailing" id="E6T-wL-ZSN"/>
+                <constraint firstItem="6DI-f7-55J" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Um4-gC-O6F"/>
+                <constraint firstAttribute="bottom" secondItem="6DI-f7-55J" secondAttribute="bottom" id="eGr-37-zqU"/>
+            </constraints>
+            <size key="customSize" width="329" height="190"/>
+            <connections>
+                <outlet property="balanceLabel" destination="Sa4-eE-Yzg" id="wy2-AR-I3f"/>
+                <outlet property="dateLabel" destination="3H6-Em-nEz" id="ZYn-mZ-Y7A"/>
+                <outlet property="numberCardLabel" destination="qO3-EY-Uwe" id="BKV-Xh-FoA"/>
+                <outlet property="typeCardLabel" destination="cD2-os-zIz" id="dU1-1t-vhf"/>
+                <outlet property="viewCell" destination="6DI-f7-55J" id="Bt6-1D-JXc"/>
+            </connections>
+            <point key="canvasLocation" x="396" y="-16"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="visa_image" width="57" height="25"/>
+        <namedColor name="second_background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
