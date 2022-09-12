@@ -11,12 +11,38 @@
 		05035F3028C8073000CAF244 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05035F2F28C8073000CAF244 /* Initial.storyboard */; };
 		05035F3328C8086300CAF244 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05035F3228C8086300CAF244 /* Images.xcassets */; };
 		05035F3528C8087100CAF244 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05035F3428C8087100CAF244 /* Colors.xcassets */; };
-		05249D7F28C2A30A002E3C08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05249D7E28C2A30A002E3C08 /* AppDelegate.swift */; };
 		05249D8128C2A30A002E3C08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05249D8028C2A30A002E3C08 /* SceneDelegate.swift */; };
 		05249D8328C2A30A002E3C08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05249D8228C2A30A002E3C08 /* ViewController.swift */; };
 		05249D8628C2A30A002E3C08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05249D8428C2A30A002E3C08 /* Main.storyboard */; };
 		05249D8828C2A30C002E3C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05249D8728C2A30C002E3C08 /* Assets.xcassets */; };
 		05249D8B28C2A30C002E3C08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05249D8928C2A30C002E3C08 /* LaunchScreen.storyboard */; };
+		87C4E37528C9A1CD00047263 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E37428C9A1CD00047263 /* Users.swift */; };
+		87C4E37828CB970700047263 /* ViewControllerPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E37628CB970700047263 /* ViewControllerPerfil.swift */; };
+		87C4E37928CB970700047263 /* ViewControllerPerfil.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E37728CB970700047263 /* ViewControllerPerfil.xib */; };
+		87C4E37C28CBB0DD00047263 /* ViewControllerAgregarPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E37A28CBB0DD00047263 /* ViewControllerAgregarPerfil.swift */; };
+		87C4E37D28CBB0DD00047263 /* ViewControllerAgregarPerfil.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E37B28CBB0DD00047263 /* ViewControllerAgregarPerfil.xib */; };
+		87C4E38028CBF4ED00047263 /* TableViewCellUsuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E37E28CBF4ED00047263 /* TableViewCellUsuarios.swift */; };
+		87C4E38128CBF4ED00047263 /* TableViewCellUsuarios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E37F28CBF4ED00047263 /* TableViewCellUsuarios.xib */; };
+		87C4E38828CBF74100047263 /* TableViewControllerUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E38628CBF74100047263 /* TableViewControllerUsuario.swift */; };
+		87C4E38928CBF74100047263 /* TableViewControllerUsuario.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E38728CBF74100047263 /* TableViewControllerUsuario.xib */; };
+		87C4E38C28CBF9D400047263 /* ViewControllerNuevoUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E38A28CBF9D400047263 /* ViewControllerNuevoUsuario.swift */; };
+		87C4E38D28CBF9D400047263 /* ViewControllerNuevoUsuario.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E38B28CBF9D400047263 /* ViewControllerNuevoUsuario.xib */; };
+		87C4E39228CD319600047263 /* ViewControllerEditarUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E39028CD319600047263 /* ViewControllerEditarUsuario.swift */; };
+		87C4E39328CD319600047263 /* ViewControllerEditarUsuario.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E39128CD319600047263 /* ViewControllerEditarUsuario.xib */; };
+		87C4E39828CD696400047263 /* CollectionViewControllerServicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E39628CD696300047263 /* CollectionViewControllerServicios.swift */; };
+		87C4E39928CD696400047263 /* CollectionViewControllerServicios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E39728CD696400047263 /* CollectionViewControllerServicios.xib */; };
+		87C4E3A428CD814900047263 /* ViewControllerPagarServicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E3A228CD814900047263 /* ViewControllerPagarServicios.swift */; };
+		87C4E3A528CD814900047263 /* ViewControllerPagarServicios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E3A328CD814900047263 /* ViewControllerPagarServicios.xib */; };
+		87C4E3AA28CD83B900047263 /* CollectionViewCellServicios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E3A828CD83B900047263 /* CollectionViewCellServicios.swift */; };
+		87C4E3AB28CD83B900047263 /* CollectionViewCellServicios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E3A928CD83B900047263 /* CollectionViewCellServicios.xib */; };
+		87C4E3B428CD9A9D00047263 /* ViewControllerTransferirHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E3B228CD9A9D00047263 /* ViewControllerTransferirHome.swift */; };
+		87C4E3B528CD9A9D00047263 /* ViewControllerTransferirHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E3B328CD9A9D00047263 /* ViewControllerTransferirHome.xib */; };
+		87C4E3B828CD9ACF00047263 /* ViewControllerTransferirImporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E3B628CD9ACF00047263 /* ViewControllerTransferirImporte.swift */; };
+		87C4E3B928CD9ACF00047263 /* ViewControllerTransferirImporte.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E3B728CD9ACF00047263 /* ViewControllerTransferirImporte.xib */; };
+		87C4E3BC28CD9AED00047263 /* ViewControllerTransferirConcepto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E3BA28CD9AED00047263 /* ViewControllerTransferirConcepto.swift */; };
+		87C4E3BD28CD9AED00047263 /* ViewControllerTransferirConcepto.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E3BB28CD9AED00047263 /* ViewControllerTransferirConcepto.xib */; };
+		87C4E3C428CD9FCD00047263 /* TableViewControllerTransferirHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4E3C228CD9FCD00047263 /* TableViewControllerTransferirHome.swift */; };
+		87C4E3C528CD9FCD00047263 /* TableViewControllerTransferirHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87C4E3C328CD9FCD00047263 /* TableViewControllerTransferirHome.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,13 +51,39 @@
 		05035F3228C8086300CAF244 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05035F3428C8087100CAF244 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		05249D7B28C2A30A002E3C08 /* bankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		05249D7E28C2A30A002E3C08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05249D8028C2A30A002E3C08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		05249D8228C2A30A002E3C08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05249D8528C2A30A002E3C08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05249D8728C2A30C002E3C08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05249D8A28C2A30C002E3C08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05249D8C28C2A30C002E3C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87C4E37428C9A1CD00047263 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		87C4E37628CB970700047263 /* ViewControllerPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPerfil.swift; sourceTree = "<group>"; };
+		87C4E37728CB970700047263 /* ViewControllerPerfil.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerPerfil.xib; sourceTree = "<group>"; };
+		87C4E37A28CBB0DD00047263 /* ViewControllerAgregarPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAgregarPerfil.swift; sourceTree = "<group>"; };
+		87C4E37B28CBB0DD00047263 /* ViewControllerAgregarPerfil.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerAgregarPerfil.xib; sourceTree = "<group>"; };
+		87C4E37E28CBF4ED00047263 /* TableViewCellUsuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellUsuarios.swift; sourceTree = "<group>"; };
+		87C4E37F28CBF4ED00047263 /* TableViewCellUsuarios.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellUsuarios.xib; sourceTree = "<group>"; };
+		87C4E38628CBF74100047263 /* TableViewControllerUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerUsuario.swift; sourceTree = "<group>"; };
+		87C4E38728CBF74100047263 /* TableViewControllerUsuario.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewControllerUsuario.xib; sourceTree = "<group>"; };
+		87C4E38A28CBF9D400047263 /* ViewControllerNuevoUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNuevoUsuario.swift; sourceTree = "<group>"; };
+		87C4E38B28CBF9D400047263 /* ViewControllerNuevoUsuario.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerNuevoUsuario.xib; sourceTree = "<group>"; };
+		87C4E39028CD319600047263 /* ViewControllerEditarUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEditarUsuario.swift; sourceTree = "<group>"; };
+		87C4E39128CD319600047263 /* ViewControllerEditarUsuario.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerEditarUsuario.xib; sourceTree = "<group>"; };
+		87C4E39628CD696300047263 /* CollectionViewControllerServicios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerServicios.swift; sourceTree = "<group>"; };
+		87C4E39728CD696400047263 /* CollectionViewControllerServicios.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewControllerServicios.xib; sourceTree = "<group>"; };
+		87C4E3A228CD814900047263 /* ViewControllerPagarServicios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPagarServicios.swift; sourceTree = "<group>"; };
+		87C4E3A328CD814900047263 /* ViewControllerPagarServicios.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerPagarServicios.xib; sourceTree = "<group>"; };
+		87C4E3A828CD83B900047263 /* CollectionViewCellServicios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellServicios.swift; sourceTree = "<group>"; };
+		87C4E3A928CD83B900047263 /* CollectionViewCellServicios.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellServicios.xib; sourceTree = "<group>"; };
+		87C4E3B228CD9A9D00047263 /* ViewControllerTransferirHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTransferirHome.swift; sourceTree = "<group>"; };
+		87C4E3B328CD9A9D00047263 /* ViewControllerTransferirHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerTransferirHome.xib; sourceTree = "<group>"; };
+		87C4E3B628CD9ACF00047263 /* ViewControllerTransferirImporte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTransferirImporte.swift; sourceTree = "<group>"; };
+		87C4E3B728CD9ACF00047263 /* ViewControllerTransferirImporte.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerTransferirImporte.xib; sourceTree = "<group>"; };
+		87C4E3BA28CD9AED00047263 /* ViewControllerTransferirConcepto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTransferirConcepto.swift; sourceTree = "<group>"; };
+		87C4E3BB28CD9AED00047263 /* ViewControllerTransferirConcepto.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerTransferirConcepto.xib; sourceTree = "<group>"; };
+		87C4E3C228CD9FCD00047263 /* TableViewControllerTransferirHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerTransferirHome.swift; sourceTree = "<group>"; };
+		87C4E3C328CD9FCD00047263 /* TableViewControllerTransferirHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewControllerTransferirHome.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +100,11 @@
 		05035F2C28C806BF00CAF244 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				05035F2D28C8071000CAF244 /* Home.storyboard */,
 				05035F2F28C8073000CAF244 /* Initial.storyboard */,
+				05035F2D28C8071000CAF244 /* Home.storyboard */,
+				87C4E38F28CD315C00047263 /* Perfil */,
+				87C4E39528CD68BC00047263 /* Servicios */,
+				87C4E3AD28CD99D400047263 /* Transferir */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -57,7 +112,9 @@
 		05035F3128C8083700CAF244 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				87C4E3AC28CD99A900047263 /* Transferir */,
 				05035F3228C8086300CAF244 /* Images.xcassets */,
+				05249D8728C2A30C002E3C08 /* Assets.xcassets */,
 				05035F3428C8087100CAF244 /* Colors.xcassets */,
 			);
 			path = assets;
@@ -82,17 +139,78 @@
 		05249D7D28C2A30A002E3C08 /* bankingApp */ = {
 			isa = PBXGroup;
 			children = (
+				87C4E37328C9A1BC00047263 /* Model */,
 				05035F3128C8083700CAF244 /* assets */,
 				05035F2C28C806BF00CAF244 /* View */,
-				05249D7E28C2A30A002E3C08 /* AppDelegate.swift */,
 				05249D8028C2A30A002E3C08 /* SceneDelegate.swift */,
 				05249D8228C2A30A002E3C08 /* ViewController.swift */,
-				05249D8728C2A30C002E3C08 /* Assets.xcassets */,
 				05249D8928C2A30C002E3C08 /* LaunchScreen.storyboard */,
 				05249D8C28C2A30C002E3C08 /* Info.plist */,
 				05249D8428C2A30A002E3C08 /* Main.storyboard */,
 			);
 			path = bankingApp;
+			sourceTree = "<group>";
+		};
+		87C4E37328C9A1BC00047263 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87C4E37428C9A1CD00047263 /* Users.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87C4E38F28CD315C00047263 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				87C4E37728CB970700047263 /* ViewControllerPerfil.xib */,
+				87C4E37628CB970700047263 /* ViewControllerPerfil.swift */,
+				87C4E37B28CBB0DD00047263 /* ViewControllerAgregarPerfil.xib */,
+				87C4E37A28CBB0DD00047263 /* ViewControllerAgregarPerfil.swift */,
+				87C4E38728CBF74100047263 /* TableViewControllerUsuario.xib */,
+				87C4E38628CBF74100047263 /* TableViewControllerUsuario.swift */,
+				87C4E37F28CBF4ED00047263 /* TableViewCellUsuarios.xib */,
+				87C4E37E28CBF4ED00047263 /* TableViewCellUsuarios.swift */,
+				87C4E38B28CBF9D400047263 /* ViewControllerNuevoUsuario.xib */,
+				87C4E38A28CBF9D400047263 /* ViewControllerNuevoUsuario.swift */,
+				87C4E39128CD319600047263 /* ViewControllerEditarUsuario.xib */,
+				87C4E39028CD319600047263 /* ViewControllerEditarUsuario.swift */,
+			);
+			path = Perfil;
+			sourceTree = "<group>";
+		};
+		87C4E39528CD68BC00047263 /* Servicios */ = {
+			isa = PBXGroup;
+			children = (
+				87C4E3A328CD814900047263 /* ViewControllerPagarServicios.xib */,
+				87C4E3A228CD814900047263 /* ViewControllerPagarServicios.swift */,
+				87C4E39728CD696400047263 /* CollectionViewControllerServicios.xib */,
+				87C4E39628CD696300047263 /* CollectionViewControllerServicios.swift */,
+				87C4E3A928CD83B900047263 /* CollectionViewCellServicios.xib */,
+				87C4E3A828CD83B900047263 /* CollectionViewCellServicios.swift */,
+			);
+			path = Servicios;
+			sourceTree = "<group>";
+		};
+		87C4E3AC28CD99A900047263 /* Transferir */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transferir;
+			sourceTree = "<group>";
+		};
+		87C4E3AD28CD99D400047263 /* Transferir */ = {
+			isa = PBXGroup;
+			children = (
+				87C4E3B328CD9A9D00047263 /* ViewControllerTransferirHome.xib */,
+				87C4E3B228CD9A9D00047263 /* ViewControllerTransferirHome.swift */,
+				87C4E3C328CD9FCD00047263 /* TableViewControllerTransferirHome.xib */,
+				87C4E3C228CD9FCD00047263 /* TableViewControllerTransferirHome.swift */,
+				87C4E3B728CD9ACF00047263 /* ViewControllerTransferirImporte.xib */,
+				87C4E3B628CD9ACF00047263 /* ViewControllerTransferirImporte.swift */,
+				87C4E3BB28CD9AED00047263 /* ViewControllerTransferirConcepto.xib */,
+				87C4E3BA28CD9AED00047263 /* ViewControllerTransferirConcepto.swift */,
+			);
+			path = Transferir;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,12 +272,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				05249D8B28C2A30C002E3C08 /* LaunchScreen.storyboard in Resources */,
+				87C4E3B928CD9ACF00047263 /* ViewControllerTransferirImporte.xib in Resources */,
 				05249D8828C2A30C002E3C08 /* Assets.xcassets in Resources */,
+				87C4E3A528CD814900047263 /* ViewControllerPagarServicios.xib in Resources */,
+				87C4E38128CBF4ED00047263 /* TableViewCellUsuarios.xib in Resources */,
+				87C4E37928CB970700047263 /* ViewControllerPerfil.xib in Resources */,
+				87C4E3B528CD9A9D00047263 /* ViewControllerTransferirHome.xib in Resources */,
 				05035F3028C8073000CAF244 /* Initial.storyboard in Resources */,
+				87C4E39328CD319600047263 /* ViewControllerEditarUsuario.xib in Resources */,
+				87C4E38928CBF74100047263 /* TableViewControllerUsuario.xib in Resources */,
+				87C4E3C528CD9FCD00047263 /* TableViewControllerTransferirHome.xib in Resources */,
 				05035F3328C8086300CAF244 /* Images.xcassets in Resources */,
+				87C4E3BD28CD9AED00047263 /* ViewControllerTransferirConcepto.xib in Resources */,
 				05249D8628C2A30A002E3C08 /* Main.storyboard in Resources */,
 				05035F2E28C8071000CAF244 /* Home.storyboard in Resources */,
 				05035F3528C8087100CAF244 /* Colors.xcassets in Resources */,
+				87C4E37D28CBB0DD00047263 /* ViewControllerAgregarPerfil.xib in Resources */,
+				87C4E39928CD696400047263 /* CollectionViewControllerServicios.xib in Resources */,
+				87C4E3AB28CD83B900047263 /* CollectionViewCellServicios.xib in Resources */,
+				87C4E38D28CBF9D400047263 /* ViewControllerNuevoUsuario.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,9 +301,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87C4E37C28CBB0DD00047263 /* ViewControllerAgregarPerfil.swift in Sources */,
+				87C4E37528C9A1CD00047263 /* Users.swift in Sources */,
+				87C4E3C428CD9FCD00047263 /* TableViewControllerTransferirHome.swift in Sources */,
+				87C4E3AA28CD83B900047263 /* CollectionViewCellServicios.swift in Sources */,
+				87C4E39828CD696400047263 /* CollectionViewControllerServicios.swift in Sources */,
+				87C4E38C28CBF9D400047263 /* ViewControllerNuevoUsuario.swift in Sources */,
+				87C4E38028CBF4ED00047263 /* TableViewCellUsuarios.swift in Sources */,
 				05249D8328C2A30A002E3C08 /* ViewController.swift in Sources */,
-				05249D7F28C2A30A002E3C08 /* AppDelegate.swift in Sources */,
+				87C4E38828CBF74100047263 /* TableViewControllerUsuario.swift in Sources */,
+				87C4E39228CD319600047263 /* ViewControllerEditarUsuario.swift in Sources */,
+				87C4E37828CB970700047263 /* ViewControllerPerfil.swift in Sources */,
 				05249D8128C2A30A002E3C08 /* SceneDelegate.swift in Sources */,
+				87C4E3B828CD9ACF00047263 /* ViewControllerTransferirImporte.swift in Sources */,
+				87C4E3BC28CD9AED00047263 /* ViewControllerTransferirConcepto.swift in Sources */,
+				87C4E3A428CD814900047263 /* ViewControllerPagarServicios.swift in Sources */,
+				87C4E3B428CD9A9D00047263 /* ViewControllerTransferirHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
