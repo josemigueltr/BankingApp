@@ -58,4 +58,19 @@ xcuserdata/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3xcuserdata
+*.xcuserstate
+!xcshareddata
+!xcschemes
+*.moved-aside
+
+
+
 # End of https://www.toptal.com/developers/gitignore/api/xcode,macos,cocoapods
