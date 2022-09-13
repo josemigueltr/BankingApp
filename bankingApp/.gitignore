@@ -50,6 +50,7 @@ xcuserdata/
 *.xcscmblueprint
 *.xccheckout
 
+
 ### Xcode Patch ###
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
@@ -58,5 +59,20 @@ xcuserdata/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.toptal.com/developers/gitignore/api/xcode,macos,cocoapods
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3xcuserdata
+*.xcuserstate
+!xcshareddata
+!xcschemes
+*.moved-asideh
 
+
+
+
+# End of https://www.toptal.com/developers/gitignore/api/xcode,macos,cocoapods
