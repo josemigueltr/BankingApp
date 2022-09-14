@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05035F2E28C8071000CAF244 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05035F2D28C8071000CAF244 /* Home.storyboard */; };
-		05035F3028C8073000CAF244 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05035F2F28C8073000CAF244 /* Initial.storyboard */; };
 		05035F3328C8086300CAF244 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05035F3228C8086300CAF244 /* Images.xcassets */; };
 		05035F3528C8087100CAF244 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05035F3428C8087100CAF244 /* Colors.xcassets */; };
 		05249D8128C2A30A002E3C08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05249D8028C2A30A002E3C08 /* SceneDelegate.swift */; };
@@ -46,8 +44,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		05035F2D28C8071000CAF244 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		05035F2F28C8073000CAF244 /* Initial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
 		05035F3228C8086300CAF244 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05035F3428C8087100CAF244 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		05249D7B28C2A30A002E3C08 /* bankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,8 +96,6 @@
 		05035F2C28C806BF00CAF244 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				05035F2F28C8073000CAF244 /* Initial.storyboard */,
-				05035F2D28C8071000CAF244 /* Home.storyboard */,
 				87C4E38F28CD315C00047263 /* Perfil */,
 				87C4E39528CD68BC00047263 /* Servicios */,
 				87C4E3AD28CD99D400047263 /* Transferir */,
@@ -112,7 +106,6 @@
 		05035F3128C8083700CAF244 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				87C4E3AC28CD99A900047263 /* Transferir */,
 				05035F3228C8086300CAF244 /* Images.xcassets */,
 				05249D8728C2A30C002E3C08 /* Assets.xcassets */,
 				05035F3428C8087100CAF244 /* Colors.xcassets */,
@@ -189,13 +182,6 @@
 				87C4E3A828CD83B900047263 /* CollectionViewCellServicios.swift */,
 			);
 			path = Servicios;
-			sourceTree = "<group>";
-		};
-		87C4E3AC28CD99A900047263 /* Transferir */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Transferir;
 			sourceTree = "<group>";
 		};
 		87C4E3AD28CD99D400047263 /* Transferir */ = {
@@ -278,14 +264,12 @@
 				87C4E38128CBF4ED00047263 /* TableViewCellUsuarios.xib in Resources */,
 				87C4E37928CB970700047263 /* ViewControllerPerfil.xib in Resources */,
 				87C4E3B528CD9A9D00047263 /* ViewControllerTransferirHome.xib in Resources */,
-				05035F3028C8073000CAF244 /* Initial.storyboard in Resources */,
 				87C4E39328CD319600047263 /* ViewControllerEditarUsuario.xib in Resources */,
 				87C4E38928CBF74100047263 /* TableViewControllerUsuario.xib in Resources */,
 				87C4E3C528CD9FCD00047263 /* TableViewControllerTransferirHome.xib in Resources */,
 				05035F3328C8086300CAF244 /* Images.xcassets in Resources */,
 				87C4E3BD28CD9AED00047263 /* ViewControllerTransferirConcepto.xib in Resources */,
 				05249D8628C2A30A002E3C08 /* Main.storyboard in Resources */,
-				05035F2E28C8071000CAF244 /* Home.storyboard in Resources */,
 				05035F3528C8087100CAF244 /* Colors.xcassets in Resources */,
 				87C4E37D28CBB0DD00047263 /* ViewControllerAgregarPerfil.xib in Resources */,
 				87C4E39928CD696400047263 /* CollectionViewControllerServicios.xib in Resources */,
