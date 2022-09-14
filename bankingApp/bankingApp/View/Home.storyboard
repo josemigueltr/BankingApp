@@ -27,22 +27,6 @@
             <point key="canvasLocation" x="-722" y="-260"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="wNr-uN-bem">
-            <objects>
-                <viewController id="zi0-ML-2T1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="se2-6u-w5S">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="etn-VW-9BQ"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="profile" id="i7C-ty-vZe"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fFC-iU-Rj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-723" y="516"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="9aW-s1-dzs">
             <objects>
                 <viewController id="nJm-RO-RJO" sceneMemberID="viewController">
@@ -74,6 +58,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yad-58-1cg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="90" y="-260"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wNr-uN-bem">
+            <objects>
+                <viewController id="zi0-ML-2T1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="se2-6u-w5S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="etn-VW-9BQ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="profile" id="i7C-ty-vZe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFC-iU-Rj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-723" y="516"/>
         </scene>
     </scenes>
     <resources>

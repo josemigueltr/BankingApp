@@ -21,8 +21,8 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dQq-CA-ztF">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
-                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wwl-9h-NLr">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="217"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwl-9h-NLr">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Editar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPu-lY-4kF">
                                     <rect key="frame" x="27" y="69" width="104" height="46"/>
@@ -33,9 +33,12 @@
                                 </label>
                             </subviews>
                             <color key="backgroundColor" red="0.34960826379999999" green="0.72822810000000004" blue="0.73725497719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="250" id="WHE-JE-ip0"/>
+                            </constraints>
                         </view>
-                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GqF-rj-KhI">
-                            <rect key="frame" x="0.0" y="217" width="414" height="601"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqF-rj-KhI">
+                            <rect key="frame" x="0.0" y="250" width="414" height="528"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNw-Rw-P5E">
                                     <rect key="frame" x="28" y="36" width="119" height="40"/>
@@ -44,20 +47,20 @@
                                     <color key="textColor" red="0.34960826379999999" green="0.72822810000000004" blue="0.73725497719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTx-Ie-GSk">
-                                    <rect key="frame" x="28" y="213" width="119" height="40"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTx-Ie-GSk">
+                                    <rect key="frame" x="28" y="213" width="76" height="40"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                     <color key="textColor" red="0.34960826379999999" green="0.72822810000000004" blue="0.73725497719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAM-sO-kZe">
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAM-sO-kZe">
                                     <rect key="frame" x="28" y="95" width="357" height="34"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xi5-5R-4pb">
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="#Cuenta" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xi5-5R-4pb">
                                     <rect key="frame" x="28" y="137" width="357" height="34"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,6 +85,17 @@
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="doC-OL-u8G">
+                            <rect key="frame" x="0.0" y="778" width="414" height="40"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="nIP-1I-ukd">
+                                    <rect key="frame" x="0.0" y="0.0" width="163.5" height="40"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-2K-yP6">
+                                    <rect key="frame" x="250.5" y="0.0" width="163.5" height="40"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
                     </subviews>
                 </stackView>
             </subviews>
@@ -97,6 +111,8 @@
         </view>
     </objects>
     <resources>
+        <image name="home" width="40" height="40"/>
+        <image name="profile" width="40" height="40"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
