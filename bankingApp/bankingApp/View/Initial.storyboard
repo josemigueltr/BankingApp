@@ -28,7 +28,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8c-Lh-Whn">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8c-Lh-Whn" customClass="UICustomButton" customModule="bankingApp" customModuleProvider="target">
                                 <rect key="frame" x="45" y="664.5" width="324" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="initial_background"/>
@@ -37,11 +37,16 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Ingresar">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="l0d-cO-dDj" kind="show" id="niG-Ae-oY3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAv-VA-1zt">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAv-VA-1zt" customClass="UICustomButton" customModule="bankingApp" customModuleProvider="target">
                                 <rect key="frame" x="45" y="738.5" width="324" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="second_background"/>
@@ -51,6 +56,17 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                     <color key="baseForegroundColor" name="initial_background"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="initial_background"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="CDd-Fv-Ruh" kind="show" id="7zj-xe-mLJ"/>
                                 </connections>
@@ -65,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="2366.1538461538462" y="747.86729857819898"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="K3G-gY-9fj">
             <objects>
-                <viewController id="l0d-cO-dDj" sceneMemberID="viewController">
+                <viewController id="l0d-cO-dDj" customClass="LoginViewController" customModule="bankingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n0L-tT-Mbf">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,23 +125,51 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hW-PF-uTJ">
                                         <rect key="frame" x="0.0" y="300" width="390" height="544"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nc5-N8-cXF">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nc5-N8-cXF" customClass="CustomUITextField" customModule="bankingApp" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="50" width="342" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="nHI-ob-SG5"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="initial_background"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="emailchanged:" destination="l0d-cO-dDj" eventType="editingChanged" id="w5s-cj-ddE"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SS5-bG-vz6">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SS5-bG-vz6" customClass="CustomUITextField" customModule="bankingApp" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="130" width="342" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="rfq-Fy-TaR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="initial_background"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="passChanged:" destination="l0d-cO-dDj" eventType="editingChanged" id="H88-gg-sdY"/>
+                                                </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZ2-kp-46N">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZ2-kp-46N" customClass="UICustomButton" customModule="bankingApp" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="206" width="342" height="50"/>
                                                 <color key="backgroundColor" name="initial_background"/>
                                                 <constraints>
@@ -136,6 +180,11 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                     <color key="baseForegroundColor" name="second_background"/>
                                                 </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olvidaste tu contraseña? Recuperar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lz-Ny-hzE">
                                                 <rect key="frame" x="51.666666666666657" y="273" width="286.66666666666674" height="21.666666666666686"/>
@@ -143,20 +192,38 @@
                                                 <color key="textColor" name="initial_background"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="requerido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WO-pQ-szm">
+                                                <rect key="frame" x="24" y="90" width="342" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                <color key="textColor" name="cancel_button"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="requerido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0j-tF-ijo">
+                                                <rect key="frame" x="24" y="170" width="342" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                <color key="textColor" name="cancel_button"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="Nc5-N8-cXF" firstAttribute="leading" secondItem="5hW-PF-uTJ" secondAttribute="leading" constant="24" id="2ZJ-MC-GqZ"/>
+                                            <constraint firstItem="3WO-pQ-szm" firstAttribute="trailing" secondItem="Nc5-N8-cXF" secondAttribute="trailing" id="4wg-1N-c1b"/>
                                             <constraint firstItem="UZ2-kp-46N" firstAttribute="trailing" secondItem="SS5-bG-vz6" secondAttribute="trailing" id="8XC-R0-2wz"/>
                                             <constraint firstItem="UZ2-kp-46N" firstAttribute="top" secondItem="SS5-bG-vz6" secondAttribute="bottom" constant="36" id="8xc-Qb-Zp4"/>
                                             <constraint firstItem="SS5-bG-vz6" firstAttribute="top" secondItem="Nc5-N8-cXF" secondAttribute="bottom" constant="40" id="CnW-eG-HEM"/>
                                             <constraint firstItem="4lz-Ny-hzE" firstAttribute="top" secondItem="UZ2-kp-46N" secondAttribute="bottom" constant="17" id="Fyy-VY-PoX"/>
                                             <constraint firstItem="SS5-bG-vz6" firstAttribute="trailing" secondItem="Nc5-N8-cXF" secondAttribute="trailing" id="Iiz-TE-CkD"/>
                                             <constraint firstItem="UZ2-kp-46N" firstAttribute="leading" secondItem="SS5-bG-vz6" secondAttribute="leading" id="Izt-Oo-ZbY"/>
+                                            <constraint firstItem="D0j-tF-ijo" firstAttribute="trailing" secondItem="SS5-bG-vz6" secondAttribute="trailing" id="NZh-Hb-Fy4"/>
+                                            <constraint firstItem="3WO-pQ-szm" firstAttribute="leading" secondItem="Nc5-N8-cXF" secondAttribute="leading" id="ShI-3W-tGt"/>
                                             <constraint firstAttribute="trailing" secondItem="Nc5-N8-cXF" secondAttribute="trailing" constant="24" id="Zs0-VK-YVW"/>
                                             <constraint firstItem="4lz-Ny-hzE" firstAttribute="centerX" secondItem="5hW-PF-uTJ" secondAttribute="centerX" id="aHr-Df-sPo"/>
                                             <constraint firstItem="Nc5-N8-cXF" firstAttribute="top" secondItem="5hW-PF-uTJ" secondAttribute="top" constant="50" id="ah4-Rh-err"/>
+                                            <constraint firstItem="D0j-tF-ijo" firstAttribute="top" secondItem="SS5-bG-vz6" secondAttribute="bottom" id="lb3-pj-bHF"/>
+                                            <constraint firstItem="D0j-tF-ijo" firstAttribute="leading" secondItem="SS5-bG-vz6" secondAttribute="leading" id="rR3-S4-52l"/>
                                             <constraint firstItem="SS5-bG-vz6" firstAttribute="leading" secondItem="Nc5-N8-cXF" secondAttribute="leading" id="t4x-UC-AZK"/>
+                                            <constraint firstItem="3WO-pQ-szm" firstAttribute="top" secondItem="Nc5-N8-cXF" secondAttribute="bottom" id="tUz-eU-N2l"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -172,15 +239,22 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wBY-ab-Aqw"/>
+                    <connections>
+                        <outlet property="emailErrorL" destination="3WO-pQ-szm" id="WHA-ga-Jmf"/>
+                        <outlet property="emailTF" destination="Nc5-N8-cXF" id="y94-r1-ycI"/>
+                        <outlet property="loginSubmitButton" destination="UZ2-kp-46N" id="Fia-I3-ijr"/>
+                        <outlet property="passErrorL" destination="D0j-tF-ijo" id="7Tv-sb-ER7"/>
+                        <outlet property="passTF" destination="SS5-bG-vz6" id="mnD-LB-GC5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JOE-hC-efO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2568" y="1500"/>
         </scene>
-        <!--View Controller-->
+        <!--Signin View Controller-->
         <scene sceneID="dB3-En-c0W">
             <objects>
-                <viewController id="CDd-Fv-Ruh" sceneMemberID="viewController">
+                <viewController id="CDd-Fv-Ruh" customClass="SigninViewController" customModule="bankingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0v5-4y-nBt">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,57 +279,141 @@
                                 <rect key="frame" x="0.0" y="291" width="390" height="553"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9v7-aA-dNl">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="616"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="633.66666666666663"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Pb-Ul-Z2q">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Pb-Ul-Z2q" customClass="CustomUITextField" customModule="bankingApp" customModuleProvider="target">
                                                 <rect key="frame" x="23" y="40" width="344" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="CpQ-ji-bQj"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="initial_background"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="emailChanged:" destination="CDd-Fv-Ruh" eventType="editingChanged" id="VK7-oE-mlR"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pra-Ft-WNv">
-                                                <rect key="frame" x="23" y="104" width="344" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pra-Ft-WNv" customClass="CustomUITextField" customModule="bankingApp" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="106.33333333333331" width="344" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="initial_background"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="passwordChanged:" destination="CDd-Fv-Ruh" eventType="editingChanged" id="0Ae-tS-khc"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S5S-eJ-Lbq">
-                                                <rect key="frame" x="23" y="162" width="344" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre(s)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S5S-eJ-Lbq" customClass="CustomUITextField" customModule="bankingApp" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="166.66666666666669" width="344" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="initial_background"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nameChanged:" destination="CDd-Fv-Ruh" eventType="editingChanged" id="h2o-Iv-hWt"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="myz-ZR-Bkq">
-                                                <rect key="frame" x="23" y="220" width="344" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellios" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="myz-ZR-Bkq" customClass="CustomUITextField" customModule="bankingApp" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="227" width="344" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="initial_background"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="lastNameChanged:" destination="CDd-Fv-Ruh" eventType="editingChanged" id="5ro-Su-Ico"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HN0-tc-SBy">
-                                                <rect key="frame" x="23" y="278" width="344" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HN0-tc-SBy" customClass="CustomUITextField" customModule="bankingApp" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="287.33333333333337" width="344" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="initial_background"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="phoneChanged:" destination="CDd-Fv-Ruh" eventType="editingChanged" id="6za-I0-BXf"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-AD-TDQ">
-                                                <rect key="frame" x="23" y="336" width="344" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha de nacimiento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-AD-TDQ" customClass="CustomUITextField" customModule="bankingApp" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="347.66666666666663" width="344" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="initial_background"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="birthdayChanged:" destination="CDd-Fv-Ruh" eventType="editingChanged" id="2D4-Pz-DSR"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genero:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGa-HO-uYq">
-                                                <rect key="frame" x="23" y="394" width="64" height="22"/>
+                                                <rect key="frame" x="23" y="411.66666666666663" width="64" height="22"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" name="second_text"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xCT-vj-kXc">
-                                                <rect key="frame" x="23" y="426" width="344" height="32"/>
+                                                <rect key="frame" x="23" y="443.66666666666663" width="344" height="32"/>
                                                 <segments>
                                                     <segment title="Masculino"/>
                                                     <segment title="Femenino"/>
                                                 </segments>
                                                 <color key="selectedSegmentTintColor" red="0.34960826379999999" green="0.72822810000000004" blue="0.73725497719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </segmentedControl>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdQ-DL-Mhy">
-                                                <rect key="frame" x="35" y="489" width="320" height="50"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdQ-DL-Mhy" customClass="UICustomButton" customModule="bankingApp" customModuleProvider="target">
+                                                <rect key="frame" x="35" y="506.66666666666663" width="320" height="50"/>
                                                 <color key="backgroundColor" name="initial_background"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ESu-br-FjU"/>
@@ -265,35 +423,94 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                                     <color key="baseForegroundColor" name="second_background"/>
                                                 </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="requerido" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRg-lO-TTH">
+                                                <rect key="frame" x="23" y="80" width="344" height="14.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                <color key="textColor" name="cancel_button"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="requerido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSr-ho-ixj">
+                                                <rect key="frame" x="23" y="140.33333333333331" width="344" height="14.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                <color key="textColor" name="cancel_button"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="requerido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmx-9x-fWd">
+                                                <rect key="frame" x="23" y="200.66666666666669" width="344" height="14.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                <color key="textColor" name="cancel_button"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="requerido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0il-lL-kcL">
+                                                <rect key="frame" x="23" y="261" width="344" height="14.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                <color key="textColor" name="cancel_button"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="requerido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Veh-hn-3fQ">
+                                                <rect key="frame" x="23" y="321.33333333333337" width="344" height="14.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                <color key="textColor" name="cancel_button"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="requerido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOM-bQ-VFn">
+                                                <rect key="frame" x="23" y="381.66666666666663" width="344" height="14.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                <color key="textColor" name="cancel_button"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="Pra-Ft-WNv" firstAttribute="top" secondItem="wRg-lO-TTH" secondAttribute="bottom" constant="12" id="0QT-Qv-oya"/>
                                             <constraint firstItem="RdQ-DL-Mhy" firstAttribute="top" secondItem="xCT-vj-kXc" secondAttribute="bottom" constant="32" id="2Ld-8w-Lp0"/>
                                             <constraint firstItem="xCT-vj-kXc" firstAttribute="leading" secondItem="tGa-HO-uYq" secondAttribute="leading" id="3i3-vk-zye"/>
+                                            <constraint firstItem="0il-lL-kcL" firstAttribute="top" secondItem="myz-ZR-Bkq" secondAttribute="bottom" id="3mD-db-M4u"/>
+                                            <constraint firstItem="bOM-bQ-VFn" firstAttribute="leading" secondItem="N6e-AD-TDQ" secondAttribute="leading" id="50Z-dw-JNI"/>
                                             <constraint firstItem="tGa-HO-uYq" firstAttribute="leading" secondItem="N6e-AD-TDQ" secondAttribute="leading" id="67I-7u-Sgx"/>
+                                            <constraint firstItem="myz-ZR-Bkq" firstAttribute="top" secondItem="Nmx-9x-fWd" secondAttribute="bottom" constant="12" id="6xL-lu-TA3"/>
+                                            <constraint firstItem="Veh-hn-3fQ" firstAttribute="leading" secondItem="HN0-tc-SBy" secondAttribute="leading" id="825-wW-oJV"/>
                                             <constraint firstItem="xCT-vj-kXc" firstAttribute="top" secondItem="tGa-HO-uYq" secondAttribute="bottom" constant="10" id="AJq-0u-0O9"/>
                                             <constraint firstItem="Pra-Ft-WNv" firstAttribute="trailing" secondItem="9Pb-Ul-Z2q" secondAttribute="trailing" id="AXW-Pb-oEI"/>
                                             <constraint firstAttribute="trailing" secondItem="xCT-vj-kXc" secondAttribute="trailing" constant="23" id="BUn-E3-1bu"/>
-                                            <constraint firstItem="N6e-AD-TDQ" firstAttribute="top" secondItem="HN0-tc-SBy" secondAttribute="bottom" constant="24" id="ChW-vK-aa2"/>
-                                            <constraint firstItem="S5S-eJ-Lbq" firstAttribute="top" secondItem="Pra-Ft-WNv" secondAttribute="bottom" constant="24" id="JR8-gz-Rbe"/>
+                                            <constraint firstItem="bOM-bQ-VFn" firstAttribute="top" secondItem="N6e-AD-TDQ" secondAttribute="bottom" id="DZw-88-nZc"/>
+                                            <constraint firstItem="Nmx-9x-fWd" firstAttribute="leading" secondItem="S5S-eJ-Lbq" secondAttribute="leading" id="EjJ-FR-5w6"/>
+                                            <constraint firstItem="wRg-lO-TTH" firstAttribute="trailing" secondItem="9Pb-Ul-Z2q" secondAttribute="trailing" id="F1d-xk-dyT"/>
+                                            <constraint firstItem="N6e-AD-TDQ" firstAttribute="top" secondItem="Veh-hn-3fQ" secondAttribute="bottom" constant="12" id="L67-y4-6dk"/>
+                                            <constraint firstItem="Nmx-9x-fWd" firstAttribute="top" secondItem="S5S-eJ-Lbq" secondAttribute="bottom" id="M81-WL-IAX"/>
                                             <constraint firstAttribute="bottom" secondItem="RdQ-DL-Mhy" secondAttribute="bottom" constant="77" id="NJt-tp-7Ei"/>
+                                            <constraint firstItem="ZSr-ho-ixj" firstAttribute="trailing" secondItem="Pra-Ft-WNv" secondAttribute="trailing" id="O16-pI-dmU"/>
                                             <constraint firstItem="myz-ZR-Bkq" firstAttribute="leading" secondItem="S5S-eJ-Lbq" secondAttribute="leading" id="O7f-9U-hX8"/>
+                                            <constraint firstItem="0il-lL-kcL" firstAttribute="trailing" secondItem="myz-ZR-Bkq" secondAttribute="trailing" id="Q52-qa-SqR"/>
                                             <constraint firstItem="9Pb-Ul-Z2q" firstAttribute="top" secondItem="9v7-aA-dNl" secondAttribute="top" constant="40" id="QGi-az-ImZ"/>
                                             <constraint firstItem="HN0-tc-SBy" firstAttribute="trailing" secondItem="myz-ZR-Bkq" secondAttribute="trailing" id="Seu-0m-cIh"/>
+                                            <constraint firstItem="ZSr-ho-ixj" firstAttribute="leading" secondItem="Pra-Ft-WNv" secondAttribute="leading" id="UBE-9a-GOu"/>
                                             <constraint firstItem="myz-ZR-Bkq" firstAttribute="trailing" secondItem="S5S-eJ-Lbq" secondAttribute="trailing" id="UTN-Vr-8sc"/>
                                             <constraint firstItem="RdQ-DL-Mhy" firstAttribute="leading" secondItem="9v7-aA-dNl" secondAttribute="leading" constant="35" id="VLT-ml-ZTO"/>
                                             <constraint firstItem="Pra-Ft-WNv" firstAttribute="leading" secondItem="9Pb-Ul-Z2q" secondAttribute="leading" id="VQK-B8-hNd"/>
                                             <constraint firstItem="S5S-eJ-Lbq" firstAttribute="leading" secondItem="Pra-Ft-WNv" secondAttribute="leading" id="Wmm-87-b5F"/>
-                                            <constraint firstItem="Pra-Ft-WNv" firstAttribute="top" secondItem="9Pb-Ul-Z2q" secondAttribute="bottom" constant="24" id="X25-T6-WHm"/>
-                                            <constraint firstItem="tGa-HO-uYq" firstAttribute="top" secondItem="N6e-AD-TDQ" secondAttribute="bottom" constant="24" id="YB5-Vq-VEE"/>
+                                            <constraint firstItem="wRg-lO-TTH" firstAttribute="leading" secondItem="9Pb-Ul-Z2q" secondAttribute="leading" id="X9a-0O-2OR"/>
+                                            <constraint firstItem="tGa-HO-uYq" firstAttribute="top" secondItem="N6e-AD-TDQ" secondAttribute="bottom" constant="30" id="YB5-Vq-VEE"/>
+                                            <constraint firstItem="Veh-hn-3fQ" firstAttribute="trailing" secondItem="HN0-tc-SBy" secondAttribute="trailing" id="YJA-Pu-hAa"/>
+                                            <constraint firstItem="wRg-lO-TTH" firstAttribute="top" secondItem="9Pb-Ul-Z2q" secondAttribute="bottom" id="ZFJ-TB-iaN"/>
+                                            <constraint firstItem="bOM-bQ-VFn" firstAttribute="trailing" secondItem="N6e-AD-TDQ" secondAttribute="trailing" id="ZVB-95-Evw"/>
                                             <constraint firstItem="N6e-AD-TDQ" firstAttribute="trailing" secondItem="HN0-tc-SBy" secondAttribute="trailing" id="ayq-Rl-qCA"/>
                                             <constraint firstItem="S5S-eJ-Lbq" firstAttribute="trailing" secondItem="Pra-Ft-WNv" secondAttribute="trailing" id="b5p-pV-8Z1"/>
                                             <constraint firstItem="9Pb-Ul-Z2q" firstAttribute="leading" secondItem="9v7-aA-dNl" secondAttribute="leading" constant="23" id="cED-ag-hLT"/>
+                                            <constraint firstItem="Veh-hn-3fQ" firstAttribute="top" secondItem="HN0-tc-SBy" secondAttribute="bottom" id="fxT-tj-zrs"/>
                                             <constraint firstItem="N6e-AD-TDQ" firstAttribute="leading" secondItem="HN0-tc-SBy" secondAttribute="leading" id="ghb-dV-XIY"/>
-                                            <constraint firstItem="HN0-tc-SBy" firstAttribute="top" secondItem="myz-ZR-Bkq" secondAttribute="bottom" constant="24" id="id9-bc-FdV"/>
+                                            <constraint firstItem="S5S-eJ-Lbq" firstAttribute="top" secondItem="ZSr-ho-ixj" secondAttribute="bottom" constant="12" id="jqh-UD-q1n"/>
+                                            <constraint firstItem="Nmx-9x-fWd" firstAttribute="trailing" secondItem="S5S-eJ-Lbq" secondAttribute="trailing" id="m9h-c1-Piz"/>
                                             <constraint firstAttribute="trailing" secondItem="9Pb-Ul-Z2q" secondAttribute="trailing" constant="23" id="mF8-Qg-IgN"/>
-                                            <constraint firstItem="myz-ZR-Bkq" firstAttribute="top" secondItem="S5S-eJ-Lbq" secondAttribute="bottom" constant="24" id="r5r-W1-qlL"/>
+                                            <constraint firstItem="HN0-tc-SBy" firstAttribute="top" secondItem="0il-lL-kcL" secondAttribute="bottom" constant="12" id="r45-fq-Pp6"/>
+                                            <constraint firstItem="ZSr-ho-ixj" firstAttribute="top" secondItem="Pra-Ft-WNv" secondAttribute="bottom" id="rIo-xd-MtN"/>
+                                            <constraint firstItem="0il-lL-kcL" firstAttribute="leading" secondItem="myz-ZR-Bkq" secondAttribute="leading" id="s5l-4u-7T2"/>
                                             <constraint firstAttribute="trailing" secondItem="RdQ-DL-Mhy" secondAttribute="trailing" constant="35" id="s9H-bi-hzW"/>
                                             <constraint firstItem="HN0-tc-SBy" firstAttribute="leading" secondItem="myz-ZR-Bkq" secondAttribute="leading" id="tvn-nC-Ye3"/>
                                         </constraints>
@@ -324,6 +541,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UCm-ji-A1P"/>
+                    <connections>
+                        <outlet property="birthdayErrorL" destination="bOM-bQ-VFn" id="PRb-ij-oMG"/>
+                        <outlet property="birthdayTF" destination="N6e-AD-TDQ" id="2d0-zS-WWR"/>
+                        <outlet property="emailErrorL" destination="wRg-lO-TTH" id="WK2-iz-wJC"/>
+                        <outlet property="emailTF" destination="9Pb-Ul-Z2q" id="rUl-Tb-r4c"/>
+                        <outlet property="lastNameErrorL" destination="0il-lL-kcL" id="g44-EA-18g"/>
+                        <outlet property="lastNameTF" destination="myz-ZR-Bkq" id="9x4-It-sxR"/>
+                        <outlet property="nameErrorL" destination="Nmx-9x-fWd" id="niY-N4-WZS"/>
+                        <outlet property="nameTF" destination="S5S-eJ-Lbq" id="BJQ-Dr-1tz"/>
+                        <outlet property="passwordErrorL" destination="ZSr-ho-ixj" id="rIv-RP-8rJ"/>
+                        <outlet property="passwordTF" destination="Pra-Ft-WNv" id="o5X-X5-qoC"/>
+                        <outlet property="phoneErrorL" destination="Veh-hn-3fQ" id="5gY-FX-sRE"/>
+                        <outlet property="phoneTF" destination="HN0-tc-SBy" id="6Kn-NC-9Qg"/>
+                        <outlet property="submitSinginButton" destination="RdQ-DL-Mhy" id="qQ9-K9-zd9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ux-ES-7p4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -348,8 +580,49 @@
             <point key="canvasLocation" x="1436.9230769230769" y="747.86729857819898"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="9Pb-Ul-Z2q">
+            <size key="intrinsicContentSize" width="72.666666666666671" height="34"/>
+        </designable>
+        <designable name="HN0-tc-SBy">
+            <size key="intrinsicContentSize" width="83.666666666666671" height="34"/>
+        </designable>
+        <designable name="JAv-VA-1zt">
+            <size key="intrinsicContentSize" width="152.66666666666666" height="42.666666666666664"/>
+        </designable>
+        <designable name="N6e-AD-TDQ">
+            <size key="intrinsicContentSize" width="162" height="34"/>
+        </designable>
+        <designable name="Nc5-N8-cXF">
+            <size key="intrinsicContentSize" width="72.666666666666671" height="34"/>
+        </designable>
+        <designable name="Pra-Ft-WNv">
+            <size key="intrinsicContentSize" width="102.33333333333333" height="34"/>
+        </designable>
+        <designable name="RdQ-DL-Mhy">
+            <size key="intrinsicContentSize" width="152.66666666666666" height="42.666666666666664"/>
+        </designable>
+        <designable name="S5S-eJ-Lbq">
+            <size key="intrinsicContentSize" width="97.333333333333329" height="34"/>
+        </designable>
+        <designable name="SS5-bG-vz6">
+            <size key="intrinsicContentSize" width="102.33333333333333" height="34"/>
+        </designable>
+        <designable name="UZ2-kp-46N">
+            <size key="intrinsicContentSize" width="117" height="42.666666666666664"/>
+        </designable>
+        <designable name="c8c-Lh-Whn">
+            <size key="intrinsicContentSize" width="117" height="42.666666666666664"/>
+        </designable>
+        <designable name="myz-ZR-Bkq">
+            <size key="intrinsicContentSize" width="79" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <image name="main_logo" width="200" height="200"/>
+        <namedColor name="cancel_button">
+            <color red="0.75294117647058822" green="0.0078431372549019607" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="initial_background">
             <color red="0.11764705882352941" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
